@@ -1,0 +1,560 @@
+body {
+    /* هذه الألوان هي الافتراضية، وسيتم تجاوزها بـ data-bs-theme */
+    background: #000000;
+    color: #999;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Dark Mode styles (Default) - تبقى الألوان كما هي في الوضع الداكن */
+body[data-bs-theme="dark"] {
+    background: #000000;
+    color: #999;
+}
+
+body[data-bs-theme="dark"] h1,
+body[data-bs-theme="dark"] h2,
+body[data-bs-theme="dark"] h3,
+body[data-bs-theme="dark"] h4,
+body[data-bs-theme="dark"] h5 {
+    color: #ffffff;
+}
+
+/* لون خاص لاسمك في الهيدر للوضع الداكن */
+body[data-bs-theme="dark"] #home h1 {
+    border-color: #D43F52; /* الأحمر */
+    color: #D43F52; /* الأحمر */
+}
+
+/* زر Get Started في الهيدر للوضع الداكن */
+body[data-bs-theme="dark"] #home .btn {
+    border-color: #f30808; /* أبيض */
+    color: #f70707; /* أبيض */
+}
+
+body[data-bs-theme="dark"] #home .btn:hover {
+    color: #D43F52; /* أحمر عند التحويم */
+    border-color: transparent;
+}
+
+body[data-bs-theme="dark"] #work {
+    background: #1a1a1a;
+}
+
+body[data-bs-theme="dark"] #work .media .fa {
+    border-color: #fff;
+    color: #D43F52;
+}
+
+body[data-bs-theme="dark"] #work .media .fa:hover {
+    background: #fff;
+}
+
+body[data-bs-theme="dark"] #about h4 {
+    color: #D43F52;
+}
+
+body[data-bs-theme="dark"] #about .progress {
+    background: #fff;
+}
+
+body[data-bs-theme="dark"] #about .progress .progress-bar-danger {
+    background-color: #D43F52;
+}
+
+body[data-bs-theme="dark"] #about span {
+    color: #fff;
+}
+
+body[data-bs-theme="dark"] #portfolio {
+    background: #1a1a1a;
+}
+
+body[data-bs-theme="dark"] #portfolio .portfolio-thumb .portfolio-overlay {
+    background: #D43F52;
+}
+
+body[data-bs-theme="dark"] #contact .contact-title {
+    color: #fff;
+}
+
+body[data-bs-theme="dark"] #contact .fa {
+    border-color: #fff;
+    color: #D43F52;
+}
+
+body[data-bs-theme="dark"] #contact .form-control {
+    border-color: #999999;
+    color: #fff;
+}
+
+body[data-bs-theme="dark"] #contact input[type="submit"] {
+    background: #D43F52;
+    border-color: transparent;
+    color: #fff;
+}
+
+body[data-bs-theme="dark"] #contact input[type="submit"]:hover {
+    background-color: #fff;
+    color: #D43F52;
+}
+
+body[data-bs-theme="dark"] footer {
+    border-top-color: #090900;
+}
+
+body[data-bs-theme="dark"] .social-icon li a {
+    color: #606060;
+}
+
+body[data-bs-theme="dark"] .social-icon li a:hover {
+    color: #D43F52;
+}
+
+
+/* Light Mode styles - تم عكس الألوان لتظهر بشكل جيد على الخلفية الفاتحة */
+body[data-bs-theme="light"] {
+    background: #ffffff; /* خلفية بيضاء */
+    color: #555; /* لون نص داكن قليلاً */
+}
+
+body[data-bs-theme="light"] h1,
+body[data-bs-theme="light"] h2,
+body[data-bs-theme="light"] h3,
+body[data-bs-theme="light"] h4,
+body[data-bs-theme="light"] h5 {
+    color: #333333; /* لون عناوين داكن */
+}
+
+/* لون خاص لاسمك في الهيدر للوضع الفاتح */
+body[data-bs-theme="light"] #home h1 {
+    border-color: #333333; /* لون داكن للحد */
+    color: #333333; /* لون داكن للنص */
+}
+
+/* زر Get Started في الهيدر للوضع الفاتح */
+body[data-bs-theme="light"] #home .btn {
+    border-color: #333333; /* لون داكن للحد */
+    color: #333333; /* لون داكن للنص */
+}
+
+body[data-bs-theme="light"] #home .btn:hover {
+    color: #D43F52; /* أحمر عند التحويم */
+    border-color: transparent;
+}
+
+
+body[data-bs-theme="light"] #work {
+    background: #f9f9f9; /* خلفية فاتحة لقسم العمل */
+}
+
+body[data-bs-theme="light"] #work .media .fa {
+    border-color: #333333; /* لون حد داكن للأيقونات */
+    color: #D43F52; /* لون الأيقونات أحمر (ثابت) */
+}
+
+body[data-bs-theme="light"] #work .media .fa:hover {
+    background: #333333; /* خلفية داكنة عند التحويم */
+    color: #fff; /* لون أبيض للأيقونة عند التحويم */
+}
+
+body[data-bs-theme="light"] #about h4 {
+    color: #D43F52; /* لون أحمر (ثابت) */
+}
+
+body[data-bs-theme="light"] #about .progress {
+    background: #eee; /* خلفية أفتح للشريط التقدمي */
+}
+
+body[data-bs-theme="light"] #about .progress .progress-bar-danger {
+    background-color: #D43F52; /* لون أحمر (ثابت) */
+}
+
+body[data-bs-theme="light"] #about span {
+    color: #333; /* لون نص داكن */
+}
+
+body[data-bs-theme="light"] #portfolio {
+    background: #f9f9f9; /* خلفية فاتحة لقسم البورتفوليو */
+}
+
+body[data-bs-theme="light"] #portfolio .portfolio-thumb .portfolio-overlay {
+    background: #D43F52; /* لون أحمر (ثابت) */
+}
+
+body[data-bs-theme="light"] #contact .contact-title {
+    color: #333; /* لون عناوين داكن */
+}
+
+body[data-bs-theme="light"] #contact .fa {
+    border-color: #333; /* لون حد داكن للأيقونات */
+    color: #D43F52; /* لون أحمر (ثابت) */
+}
+
+body[data-bs-theme="light"] #contact .form-control {
+    background: transparent;
+    border-color: #777; /* لون حد داكن قليلاً للمدخلات */
+    color: #333; /* لون نص داكن للمدخلات */
+}
+
+body[data-bs-theme="light"] #contact input[type="submit"] {
+    background: #D43F52; /* لون أحمر (ثابت) */
+    border-color: transparent;
+    color: #fff; /* لون أبيض للنص */
+}
+
+body[data-bs-theme="light"] #contact input[type="submit"]:hover {
+    background-color: #333; /* خلفية داكنة عند التحويم */
+    color: #D43F52; /* أحمر عند التحويم */
+}
+
+body[data-bs-theme="light"] footer {
+    border-top-color: #e0e0e0; /* حد فاتح */
+}
+
+body[data-bs-theme="light"] .social-icon li a {
+    color: #888; /* لون أيقونات سوشل ميديا داكن قليلاً */
+}
+
+body[data-bs-theme="light"] .social-icon li a:hover {
+    color: #D43F52; /* أحمر عند التحويم */
+}
+
+
+/* Dark/Light mode toggle icons */
+.icons-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.icons-container .fa {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #070707; /* لون الأيقونات (ثابت) */
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1); /* خلفية خفيفة للأيقونات في الوضع الداكن */
+    transition: all 0.3s ease;
+}
+
+/* خلفية الأيقونات في الوضع الفاتح */
+body[data-bs-theme="light"] .icons-container .fa {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.icons-container .fa:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* تأثير التحويم للوضع الداكن */
+}
+
+body[data-bs-theme="light"] .icons-container .fa:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* تأثير التحويم للوضع الفاتح */
+}
+
+
+/* Hide one icon based on the initial theme */
+body[data-bs-theme="dark"] #moon-icon {
+    display: none;
+}
+
+body[data-bs-theme="light"] #sun-icon {
+    display: none;
+}
+
+
+/* start all section */
+#home,
+#home .fp-slide,
+#home .fp-tableCell,
+
+#work,
+#work .fp-slide,
+#work .fp-tableCell,
+
+#about,
+#about .fp-slide,
+#about .fp-tableCell,
+
+#contact,
+#contact .fp-slide,
+#contact .fp-tableCell,
+
+#portfolio,
+#portfolio .fp-slide,
+#portfolio .fp-tableCell,
+
+footer,
+footer .fp-slide,
+footer .fp-tableCell {
+    height: auto !important;
+}
+
+/* end all section */
+
+/* start all heading */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold; /* تم الإبقاء على سمك الخط كما كان */
+}
+
+/* end all heading */
+
+/* start all section */
+#work,
+#about,
+#portfolio,
+#contact {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+/* end all section */
+
+/* start simpletextrotator */
+.rotating {
+    display: inline-block;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -ms-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -o-transform: rotateX(0) rotateY(0) rotateZ(0);
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform-origin-x: 50%;
+}
+
+.rotating.flip {
+    position: relative;
+}
+
+.rotating .front,
+.rotating .back {
+    left: 0;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.rotating .front {
+    position: absolute;
+    display: inline-block;
+    -webkit-transform: translate3d(0, 0, 1px);
+    -moz-transform: translate3d(0, 0, 1px);
+    -ms-transform: translate3d(0, 0, 1px);
+    -o-transform: translate3d(0, 0, 1px);
+    transform: translate3d(0, 0, 1px);
+}
+
+.rotating.flip .front {
+    z-index: 1;
+}
+
+.rotating .back {
+    display: block;
+    opacity: 0;
+}
+
+.rotating.spin {
+    -webkit-transform: rotate(360deg) scale(0);
+    -moz-transform: rotate(360deg) scale(0);
+    -ms-transform: rotate(360deg) scale(0);
+    -o-transform: rotate(360deg) scale(0);
+    transform: rotate(360deg) scale(0);
+}
+
+.rotating.flip .back {
+    z-index: 2;
+    display: block;
+    opacity: 1;
+
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 0);
+    -moz-transform: rotateY(180deg) translate3d(0, 0, 0);
+    -ms-transform: rotateY(180deg) translate3d(0, 0, 0);
+    -o-transform: rotateY(180deg) translate3d(0, 0, 0);
+    transform: rotateY(180deg) translate3d(0, 0, 0);
+}
+
+.rotating.flip.up .back {
+    -webkit-transform: rotateX(180deg) translate3d(0, 0, 0);
+    -moz-transform: rotateX(180deg) translate3d(0, 0, 0);
+    -ms-transform: rotateX(180deg) translate3d(0, 0, 0);
+    -o-transform: rotateX(180deg) translate3d(0, 0, 0);
+    transform: rotateX(180deg) translate3d(0, 0, 0);
+}
+
+.rotating.flip.cube .front {
+    -webkit-transform: translate3d(0, 0, 100px) scale(0.9, 0.9);
+    -moz-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -ms-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -o-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+    transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+}
+
+.rotating.flip.cube .back {
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.9, 0.9);
+    -moz-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -ms-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -o-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+}
+
+.rotating.flip.cube.up .back {
+    -webkit-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.9, 0.9);
+    -moz-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -ms-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -o-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+}
+
+/* end simpletextrotator */
+
+/* start home */
+
+#home {
+    background: url('../images/im/aa.jpg'); /* الصورة الخلفية الثابتة */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 140px;
+    text-align: center;
+}
+
+#home h2 {
+    padding-bottom: 10px;
+}
+
+/* end home */
+
+/* start work */
+#work .media {
+    margin-top: 30px;
+}
+
+#work .media .media-heading {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+/*end of work  */
+
+/* start about */
+#about .progress {
+    border-radius: 4px;
+    height: 6px;
+}
+
+#about .text-top {
+    padding-top: 50px;
+}
+
+#about span {
+    font-weight: bold;
+    display: block;
+    padding-bottom: 6px;
+}
+
+#about small {
+    font-weight: bold;
+    float: right;
+}
+
+/* end of about */
+
+/* start portfolio */
+#portfolio h2 {
+    padding-bottom: 30px;
+}
+
+#portfolio .portfolio-thumb {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#portfolio .portfolio-thumb:hover .portfolio-overlay {
+    cursor: pointer;
+    opacity: 0.6;
+    transform: scale(0.8);
+}
+
+/* end of portfolio */
+
+/* start contact */
+
+#contact address {
+    padding-bottom: 18px;
+}
+
+#contact .contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#contact .form-control {
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 20px;
+}
+
+#contact input {
+    height: 50px;
+}
+
+/* end of contact */
+
+/* footer */
+
+footer {
+    border-top: 1px solid;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+footer hr {
+    width: 100px;
+}
+
+/* end of footer */
+
+/* social media icon */
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 10px;
+    transition: all 0.4s ease-in-out;
+}
+/* end of social-icons */
